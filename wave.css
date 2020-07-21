@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+#firstSection{
+  height: 50vh;
+  width: 100%;
+  /* border-bottom: 4px solid red; */
+  position: relative;
+  background-image: url("jake-melara-2k26mRosr2o-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+#secondSection{
+  height: 50vh;
+  width: 100%;
+  background: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: consolas;
+  padding-top: 80px;
+}
+.box{
+  height: 100px;
+  width: 100px;
+  background: pink;
+  border-radius: 6px;
+  position: absolute;
+  bottom: -50px;
+
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: arial;
+  border: 2px solid black;
+  z-index: 99;
+
+}
+.filer1{
+  height: 100%;
+  width: 150px;
+  background-image: url("jake-melara-2k26mRosr2o-unsplash.jpg");
+  overflow: hidden;
+  filter: blur(14px);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+.filer2{
+  height: 100%;
+  width: 1216px;
+  background-color: black;
+  opacity: 0.6
+}
+.text1, .text2{
+  transition: 1s;
+  transition-property: opacity, visibility, top;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  padding: 30px;
+  z-index: 155;
+}
+.text1{
+  opacity: 0;
+  visibility: visible;
+  width: 150px;
+}
+.text2{
+  opacity: 1;
+  top: 0;
+  right: 0;
+  width: 1216px;
+}
+.insider{
+  position: absolute;
+  right: 50px;
+}
+#innerText{
+  color: white;
+}
+#innerText h2{
+  font-size: 50px;
+  margin: 20px;
+  width: 600px;
+  white-space: nowrap;
+  font-family: 'Calistoga', cursive;
+}
+.p{
+  text-indent: 10px;
+  width: 550px;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 25px;
+}
+@media only screen and (max-width: 769px) {
+  #innerText h2{
+    font-size: 32px;
+  }
+  .p{
+    width: 400px;
+  }
+  .insider{
+    right: -220px;
+  }
+  .filer1{
+      background-size: cover;
+  }
+}
